@@ -1,3 +1,21 @@
 body {
 color: green;
 }
+#EP {
+    height: 100%;
+    width: 100%;
+    min-height: 50px;
+    max-height: 300px;
+    min-width: 50px;
+    max-width: 300px;
+}
+
+#logo-poli {
+    text-align: left;
+    height: 100%;
+    width: 200%;
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 50px;
+    max-width: 100px;
+}
