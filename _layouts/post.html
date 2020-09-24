@@ -1,12 +1,11 @@
 ---
 layout: default
-author: 'Lui Ferreira'
-disciplina_codigo: 'PMR3304'
-disciplina_nome: 'Sistemas de Informação'
-professor: 'Prof. Dr. André Kubagawa Sato'
 ---
+<header>
+    <img src="{{ '/assets/images/logpoli.jpg' | relative_url }} id='logo-poli' ">
+</header>
 <h1>Bem-vindo a mais um post do {{ page.author }}</h1>
-<par>Esse é um post tradicional, gerado por meio do `Jekyll`, da disciplina 
+<par>Esse é um post tradicional, gerado por meio do <i>Jekyll</i>, da disciplina 
     {{ page.disciplina_nome }}, {{ page.disciplina_codigo }}. </par>
 <div> Bem, chega de enrolação, o conteúdo o do post é:</div>
 {{ content }}
