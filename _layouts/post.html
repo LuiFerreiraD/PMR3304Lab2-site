@@ -5,9 +5,9 @@ disciplina_codigo: 'PMR3304'
 disciplina_nome: 'Sistemas de Informação'
 professor: 'Prof. Dr. André Kubagawa Sato'
 ---
-<h1>Bem-vindo a mais um post do {{ author }}</h1>
+<h1>Bem-vindo a mais um post do {{ page.author }}</h1>
 <par>Esse é um post tradicional, gerado por meio do `Jekyll`, da disciplina 
-    {{ disciplina_nome }}, {{disciplina_codigo}}. </par>
+    {{ page.disciplina_nome }}, {{ page.disciplina_codigo }}. </par>
 <div> Bem, chega de enrolação, o conteúdo o do post é:</div>
 {{ content }}
 <footer>Postado no dia {{ page.date }} na categoria {{ page.categories}}</footer>
