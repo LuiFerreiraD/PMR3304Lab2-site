@@ -6,7 +6,7 @@ layout: default
 {% for post in site.posts %}
     <li><a href="{{ post.url | relative_url }} ">{{post.title}}</a>
     {% if page.img %}
-    <img src="{{ post.img }}">
+        <span> Esse post tem imagem </span>
     {% endif %}
     </li> 
 {% endfor %}
