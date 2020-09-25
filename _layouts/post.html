@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<head>
+<link rel="stylesheet" href="/assets/css/styles.scss"> 
+</head>
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -8,15 +12,17 @@ layout: default
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li>
-            <img src="{{ '/assets/images/logpoli.jpg' | relative_url }}" id= "logopoli" class="d-inline-block align-top" alt="">
+            <img src="{{ '/assets/images/logpoli.jpg' | relative_url }}" id="logpoli" class="d-inline-block align-top" alt="">
         </li>
       </ul>
     </div>
   </nav>
 
 <h2 id="texto-azul"> Bem-vindo a mais um post do {{ page.author }} </h2>
+
 <h3>Esse é um post tradicional, gerado por meio do <i>Jekyll</i>, da disciplina 
     {{ page.disciplina_nome }}, {{ page.disciplina_codigo }}. </h3>
+
 <div> Bem, chega de enrolação, o conteúdo o do post é:</div>
 {{ content }}
 
