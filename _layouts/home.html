@@ -4,7 +4,11 @@ layout: default
 <ul>
 <header><img src="{{ '/assets/images/EP.jpg' | relative_url }}" id="EP"></header> 
 {% for post in site.posts %}
-    <li><a href="{{ post.url | relative_url }} ">{{post.title}}</a></li> 
+    <li><a href="{{ post.url | relative_url }} ">{{post.title}}</a>
+    {% if page.img %}
+    <img src="{{ post.img }}">
+    {% endif %}
+    </li> 
 {% endfor %}
 <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </ul>
