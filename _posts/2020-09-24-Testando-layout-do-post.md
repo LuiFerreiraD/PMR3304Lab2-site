@@ -7,8 +7,8 @@ author: 'Lui Ferreira'
 disciplina_codigo: 'PMR3304'
 disciplina_nome: 'Sistemas de Informação'
 professor: 'Prof. Dr. André Kubagawa Sato'
-img:  '/assets/images/aurora.jpg'
+img:  "{{ '/assets/images/aurora.jpg' | relative_url }}"
 ---
 Este é o conteúdo do post - aqui é o contúdo do post se referenciando à ele mesmo (mas lembre-se que isso não é um metadado, afinal de contas não se pode confundir 'metadado' com 'metalinguagem')
 
-![Imagem da aurora boreal porque eu gosto](/assets/images/aurora.jpg)
+![Imagem da aurora boreal porque eu gosto]({{ post.img }})

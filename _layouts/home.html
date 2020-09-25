@@ -5,8 +5,10 @@ layout: default
 <header><img src="{{ '/assets/images/EP.jpg' | relative_url }}" id="EP"></header> 
 {% for post in site.posts %}
     <li><a href="{{ post.url | relative_url }} ">{{post.title}}</a>
-    {% if page.img %}
+    {% if post.img %}
         <span> Esse post tem imagem </span>
+        <span> {{post.img}} </span>
+        <img scr="{{ post.img }}">
     {% endif %}
     </li> 
 {% endfor %}
