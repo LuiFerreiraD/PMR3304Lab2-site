@@ -7,20 +7,24 @@ layout: default
 -->
 </head>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-            <img src="{{ '/assets/images/logpoli.jpg' | relative_url }}" id= "logopoli" class="d-inline-block align-top" alt="">
+            <span id= "logopoli">
+            <img src="{{ '/assets/images/logpoli.jpg' | relative_url }}" class="d-inline-block align-top" alt="">
+            </span>
         </a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active" id="texto-azul"><a href="{{ relative_url }}"> Início </a></li>
+        <li class="active" id="texto-azul"><a href="{{ '/' | relative_url }}"> Início </a></li>
       </ul>
     </div>
 </nav>
 
-<h1 id="texto-azul"> Bem-vindo a mais um post do {{ page.author }} </h1>
+
+
+<h2 id="texto-azul"> Bem-vindo a mais um post do {{ page.author }} </h2>
 <h3>Esse é um post tradicional, gerado por meio do <i>Jekyll</i>, da disciplina 
     {{ page.disciplina_nome }}, {{ page.disciplina_codigo }}. </h3>
 <div> Bem, chega de enrolação, o conteúdo o do post é:</div>
