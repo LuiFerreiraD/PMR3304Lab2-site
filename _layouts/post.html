@@ -2,11 +2,18 @@
 layout: default
 ---
 <head>
+<!--
 <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+-->
 </head>
-<header>
-    <img src="{{ '/assets/images/logpoli.jpg' | relative_url }}" id="logopoli">
-</header>
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="{{ '/assets/images/logpoli.jpg' | relative_url }}" width="30" height="30" class="d-inline-block align-top" alt="">
+      Bootstrap
+    </a>
+</nav>
+
 <h1>Bem-vindo a mais um post do {{ page.author }}</h1>
 <par>Esse é um post tradicional, gerado por meio do <i>Jekyll</i>, da disciplina 
     {{ page.disciplina_nome }}, {{ page.disciplina_codigo }}. </par>
